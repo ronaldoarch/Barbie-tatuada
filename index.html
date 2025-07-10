@@ -213,7 +213,8 @@
       for (const id of ['main-title','no-censorship','teaser','cta-text','cta-btn','lang-toggle']) {
         const el = document.getElementById(id);
         if (el) {
-          if (id === 'cta-text') {
+          // Use innerHTML para elementos que podem conter HTML
+          if (id === 'teaser' || id === 'cta-text') {
             el.innerHTML = translations[currentLang][id];
           } else {
             el.textContent = translations[currentLang][id];
