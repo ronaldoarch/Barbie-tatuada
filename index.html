@@ -170,6 +170,7 @@
     <p id="cta-text" style="font-size: 1.2em; margin: 18px 0 10px 0; font-weight: bold; color: #ff0033;">CLIQUE AQUI E DESBLOQUEIE AGORA<br><span id="cta-sub" style="font-size: 0.95em; font-weight: normal; color: #fff;">Apenas para os corajosos. Não diga que eu não avisei 😏</span></p>
     <a class="cta" id="cta-btn-privacy" href="https://privacy.com.br/profile/Barbietatuadaoficial" target="_blank">🔓 Privacy Por apenas R$39,90</a>
     <a class="cta" id="cta-btn-onlyfans" href="https://onlyfans.com/barbietatuada" target="_blank">🔓 Onlyfans Por apenas $ 7.00</a>
+    <a class="cta" id="cta-btn-telegram" href="https://t.me/privacyTLG" target="_blank">💬 Telegram Entre grátis</a>
 
   </div>
   <script>
@@ -181,6 +182,7 @@
         'cta-text': 'CLIQUE AQUI E DESBLOQUEIE AGORA<br><span id="cta-sub" style="font-size: 0.95em; font-weight: normal; color: #fff;">Apenas para os corajosos. Não diga que eu não avisei 😏</span>',
         'cta-btn-privacy': '🔓 Privacy Por apenas R$29,90',
         'cta-btn-onlyfans': '🔓 Onlyfans Por apenas $ 7.00',
+        'cta-btn-telegram': '💬 Telegram Entre grátis',
         'lang-toggle': 'English',
       },
       en: {
@@ -190,13 +192,14 @@
         'cta-text': 'CLICK HERE AND UNLOCK NOW<br><span id=\"cta-sub\" style=\"font-size: 0.95em; font-weight: normal; color: #fff;\">For the brave only. Don\'t say I didn\'t warn you 😏</span>',
         'cta-btn-privacy': '🔓 Privacy For just R$29,90',
         'cta-btn-onlyfans': '🔓 Onlyfans For only $ 7.00',
+        'cta-btn-telegram': '💬 Telegram Join for free',
         'lang-toggle': 'Português',
       }
     };
     let currentLang = 'pt';
     document.getElementById('lang-toggle').onclick = function() {
       currentLang = currentLang === 'pt' ? 'en' : 'pt';
-      for (const id of ['main-title','no-censorship','teaser','cta-text','cta-btn-privacy','cta-btn-onlyfans','lang-toggle']) {
+      for (const id of ['main-title','no-censorship','teaser','cta-text','cta-btn-privacy','cta-btn-onlyfans','cta-btn-telegram','lang-toggle']) {
         const el = document.getElementById(id);
         if (el && translations[currentLang][id]) {
           el.innerHTML = translations[currentLang][id];
